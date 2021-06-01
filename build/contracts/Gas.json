@@ -1,0 +1,346 @@
+{
+  "contractName": "Gas",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "testGasRefund",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.3+commit.10d17f24\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":false,\"inputs\":[],\"name\":\"testGasRefund\",\"outputs\":[{\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/Owner/solidity_learning/contracts/Gas.sol\":\"Gas\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/Owner/solidity_learning/contracts/Gas.sol\":{\"keccak256\":\"0x842dff213a2c7fca3fb11906161673e334bd219a0278050aadba7cdfdbbfb524\",\"urls\":[\"bzzr://8f5af6b78b4a7157e33a67d9c6d31f4dd1e8ecd7b868c0abbdde01fba95a9203\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50609a8061001e6000396000f3fe6080604052348015600f57600080fd5b50600436106045576000357c010000000000000000000000000000000000000000000000000000000090048063bf13a85914604a575b600080fd5b60506066565b6040518082815260200191505060405180910390f35b60003a90509056fea165627a7a72305820fd5829fcaaa710422922e0366af82a08ba4aa632ab6b9e08b8b9723a6fe104a10029",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b50600436106045576000357c010000000000000000000000000000000000000000000000000000000090048063bf13a85914604a575b600080fd5b60506066565b6040518082815260200191505060405180910390f35b60003a90509056fea165627a7a72305820fd5829fcaaa710422922e0366af82a08ba4aa632ab6b9e08b8b9723a6fe104a10029",
+  "sourceMap": "27:103:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:103:1;;;;;;;",
+  "deployedSourceMap": "27:103:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;27:103:1;;;;;;;;;;;;;;;;;;;;46:81;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;85:4;108:11;101:18;;46:81;:::o",
+  "source": "pragma solidity ^0.5.3;\r\n\r\ncontract Gas{\r\n    function testGasRefund()public returns(uint){\r\n        return tx.gasprice;\r\n    }\r\n}\r\n\r\n//Go to GitBash\r\n//truffle(ganache)>    let gas = {};\r\n//undefined\r\n//truffle(ganache)>    Gas.deployed().then((_gas) => gas = _gas);\r\n//...\r\n//truffle(ganache)>    gas.testGasRefund()\r\n//{\r\n//  tx: '0xf2ae5691d4c6cad49a15797bb868566e6e2b934b738ebc01949a456a6bd6ebee',\r\n//  receipt: {\r\n//    transactionHash: '0xf2ae5691d4c6cad49a15797bb868566e6e2b934b738ebc01949a456a6bd6ebee',\r\n//    transactionIndex: 0,\r\n//    blockHash: '0x062977f15e53657cd0c9df44c3d236da1e4a30bd6852c8cdf8106d3ff8a42704',\r\n//    blockNumber: 17,\r\n//    from: '0x088a7cf9c560f73465855ed440abf38eb2087e65',\r\n//    to: '0x7d1321675ccdfe986d8c8a3d7fc09321691f87f0',\r\n//    gasUsed: 21259,\r\n//    cumulativeGasUsed: 21259,\r\n//    contractAddress: null,\r\n//    logs: [],\r\n//    status: true,\r\n//    logsBloom:\r\n//    ...\r\n//    rawLogs: []\r\n//  },\r\n//  logs: []\r\n// }\r\n",
+  "sourcePath": "C:/Users/Owner/solidity_learning/contracts/Gas.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Owner/solidity_learning/contracts/Gas.sol",
+    "exportedSymbols": {
+      "Gas": [
+        40
+      ]
+    },
+    "id": 41,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 30,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".3"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 40,
+        "linearizedBaseContracts": [
+          40
+        ],
+        "name": "Gas",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 38,
+              "nodeType": "Block",
+              "src": "90:37:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 35,
+                      "name": "tx",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 129,
+                      "src": "108:2:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_magic_transaction",
+                        "typeString": "tx"
+                      }
+                    },
+                    "id": 36,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "gasprice",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": null,
+                    "src": "108:11:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 34,
+                  "id": 37,
+                  "nodeType": "Return",
+                  "src": "101:18:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 39,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "testGasRefund",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 31,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "68:2:1"
+            },
+            "returnParameters": {
+              "id": 34,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 33,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 39,
+                  "src": "85:4:1",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 32,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "85:4:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "84:6:1"
+            },
+            "scope": 40,
+            "src": "46:81:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 41,
+        "src": "27:103:1"
+      }
+    ],
+    "src": "0:970:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/C/Users/Owner/solidity_learning/contracts/Gas.sol",
+      "exportedSymbols": {
+        "Gas": [
+          40
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.5",
+            ".3"
+          ]
+        },
+        "id": 30,
+        "name": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            40
+          ],
+          "name": "Gas",
+          "scope": 41
+        },
+        "children": [
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "testGasRefund",
+              "scope": 40,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 31,
+                "name": "ParameterList",
+                "src": "68:2:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 39,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 32,
+                        "name": "ElementaryTypeName",
+                        "src": "85:4:1"
+                      }
+                    ],
+                    "id": 33,
+                    "name": "VariableDeclaration",
+                    "src": "85:4:1"
+                  }
+                ],
+                "id": 34,
+                "name": "ParameterList",
+                "src": "84:6:1"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 34
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "member_name": "gasprice",
+                          "referencedDeclaration": null,
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 129,
+                              "type": "tx",
+                              "value": "tx"
+                            },
+                            "id": 35,
+                            "name": "Identifier",
+                            "src": "108:2:1"
+                          }
+                        ],
+                        "id": 36,
+                        "name": "MemberAccess",
+                        "src": "108:11:1"
+                      }
+                    ],
+                    "id": 37,
+                    "name": "Return",
+                    "src": "101:18:1"
+                  }
+                ],
+                "id": 38,
+                "name": "Block",
+                "src": "90:37:1"
+              }
+            ],
+            "id": 39,
+            "name": "FunctionDefinition",
+            "src": "46:81:1"
+          }
+        ],
+        "id": 40,
+        "name": "ContractDefinition",
+        "src": "27:103:1"
+      }
+    ],
+    "id": 41,
+    "name": "SourceUnit",
+    "src": "0:970:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.3+commit.10d17f24.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x7D1321675CCDfe986d8c8a3D7fc09321691f87F0",
+      "transactionHash": "0xc5f5b1e1ce7863937c900fe4e01d77e88b92087959acb4c93f776875818b269f"
+    }
+  },
+  "schemaVersion": "3.4.1",
+  "updatedAt": "2021-06-01T18:32:16.433Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
