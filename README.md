@@ -1,4 +1,4 @@
-This shows you how I install and set up my Dapps for the atom ide for front end and back end. Sorry if this is messy
+This shows you how I install and set up my Dapps for the atom ide for front end and back end. Sorry if this is messy Ill clean it up later
 
 
 
