@@ -1,4 +1,4 @@
-This shows you how I install and set up my Dapps for the atom ide for front end and back end. 
+This shows you how I install and set up my Dapps for the atom ide for front end and back end. Sorry if this is messy
 
 
 
@@ -97,7 +97,7 @@ found 0 vulnerabilities
 
 -------------------------------------------------------------------------------------------------------------------------------
 
-#Now you are able to type npm run dev
+#Now you are able to type npm run dev, which is how you get your site up
 
 -------------------------------------------------------------------------------------------------------------------------------
 Owner@DESKTOP-IHSJ5E1 MINGW64 ~/Fifa_NFT
